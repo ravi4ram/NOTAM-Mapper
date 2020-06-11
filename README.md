@@ -32,7 +32,7 @@ Script is written with python (Version: 3.6) on linux. Additional modules requir
 generates a png file and shows the plot.
 
 ## To-do list
-* This initial version is ISRO specific and the map boundaries and hard-coded. This could be made automatic by taking min-max values of latitude/longitude read through the danger zones. Another way is to store specific boundaries for each launch port in a dictionary and display them accordingly. 
+* This initial version is ISRO specific and the map boundaries are hard-coded. This could be made automatic by taking min-max values of latitude/longitude read through the danger zones. Another way is to store specific boundaries for each launch port in a dictionary and display them accordingly. 
 * Need to test with NOTAMS of others launch agencies and modify the code accordingly.    
 * Script could be modified to be as a bot running for twitter, reddit etc.
 
