@@ -1,5 +1,12 @@
 # NOTAM-Mapper
-> This script reads the NOTAM (Notice To Airmen) file and generates a map with danger zones marked on it. 
+> This script reads the NOTAM (Notice To Airmen) file and generates a map with danger zones marked on it.    
+
+&nbsp;    
+####UPDATE [28-OCT-2020]:     
+Since Basemap is deprecated in favor of the Cartopy modules ( https://matplotlib.org/basemap/ ),     
+I have modified the code to replace basemap functions with Cartopy    
+&nbsp;    
+
 
 ## Table of contents
 * [General info](#general-info)
@@ -18,16 +25,17 @@ Outputs produced by the script in running with the NOTAMs issued for the launche
 
 
 ## Setup
-Script is written with python (Version: 3.6) on linux. Additional modules required:   
+Script is written with python (Version: 3.6.9) on linux. Additional modules required:   
 
-* numpy  (tested with Version: 1.18.4 )
-* matplotlib  (tested with Version: 2.1.1 )
-* basemap ( tested with Version: 1.1.0 )
+* numpy  (tested with Version: 1.19.2 )
+* matplotlib  (tested with Version: 3.3.2  )
+* ~~basemap ( tested with Version: 1.1.0 )~~
+* Cartopy ( tested with Version: 0.18.0 )
 
 ## How to run   
-* copy one of the notams into a txt file in the script directory, say notam-LV-noXX.txt
-* edit code at line no.286 (around) to read the new NOTAM.  
- `notam_filename = "notam-LV-noXX.txt"`   
+* Sample NOTAMs are placed in the test directory (say we pick notam-gslv-f10.txt)
+* edit code at line no.239 (around) to read the new NOTAM.  
+ `notam_filename = "./test/notam-gslv-f10.txt" `   
 * run `python notam-mapper.py`. It
 generates a png file and shows the plot.
 
