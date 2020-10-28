@@ -2,7 +2,7 @@
 > This script reads the NOTAM (Notice To Airmen) file and generates a map with danger zones marked on it.    
 
 &nbsp;    
-####UPDATE [28-OCT-2020]:     
+## UPDATE [28-OCT-2020]:     
 Since Basemap is deprecated in favor of the Cartopy modules ( https://matplotlib.org/basemap/ ),     
 I have modified the code to replace basemap functions with Cartopy    
 &nbsp;    
